@@ -1,0 +1,17 @@
+﻿@model List<TPElectronDemo.Data.Country>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">DEMO</a>.</p>
+
+    <ul>
+        @foreach (var country in Model)
+        {
+            <li>@country.Name</li>
+        }
+    </ul>
+</div>
